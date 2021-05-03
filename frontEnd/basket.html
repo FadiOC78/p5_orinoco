@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+    <title>Orinoco - Panier</title>
+
+</head>
+    <body>
+        <!-- HEADER -->
+            <header>
+                <a href="index.html" class="header_title">
+                    <img src="logo_orinoco.png" alt="Logo Orinoco" />
+                </a>
+                <a href="basket.html">  <i class="fas fa-shopping-cart"></i>Panier</a>
+            </header>
+
+            <main class="basket">
+                <h1 class="big_title">Votre Panier</h1>
+
+                <!-- BASKET -->
+                <div class="ordered">
+                    <h2>Vos articles</h2>
+                    <div id="ordered_articles">
+                        
+                    </div>
+
+                    <!-- TOTAL PRICE-->
+                    <p id="total_price"></p>
+                </div>
+
+                <button id="basketToEmpty" type="button">Vider le panier</button> 
+
+                <!-- USER INFORMATIONS -->
+                <form>
+                    <h2>Adresse de livraison et de facturation:</h2>
+                    <!-- FIRST NAME -->
+                    <label for="firstName">Prénom:</label>
+                    <input type="text" id="firstName" name="firstName" required>
+
+                    <!-- LAST NAME -->
+                    <label for="lastName">Nom:</label>
+                    <input type="text" id="lastName" name="lastName" required>
+                    
+                    <!-- EMAIL -->
+                    <label for="email">Email (Ex : john.doe@mail.com):</label><br>
+                    <input type="email" id="email" name="email" required>
+
+                    <!-- ADRESS -->
+                    <label for="address">Adresse:</label><br>
+                    <input type="text" id="address" name="address" required>
+
+                    <!-- POSTAL CODE -->
+                    <label for="code">Code postal:</label><br>
+                    <input type="text" id="number" name="code" pattern="[0-9]{5}" required>
+
+                    <!-- CITY -->
+                    <label for="city">Ville:</label><br>
+                    <input type="text" id="city" name="city" required>
+
+                    <!-- SUBMIT BUTTON -->
+                    <button type="submit">Commander</button>
+                </form>
+            </main>
+        
+        <!-- JS SCRIPT -->
+        <script src="js/basket.js" type="text/javascript"></script>
+
+    </body>
+</html>
