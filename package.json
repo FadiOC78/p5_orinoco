@@ -1,31 +1,20 @@
 {
-  "name": "orinoco-backend",
+  "name": "Orinoco",
   "version": "1.0.0",
-  "description": "This is the back end server for Project 5 of the Junior Web Developer path.",
-  "main": "server.js",
+  "description": "Conception du site e-commerce Orinoco.",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "watch": "node-sass -o css scss/main.scss -w"
   },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "bcrypt": "^3.0.8",
-    "body-parser": "^1.18.3",
-    "bootstrap": "^4.5.2",
-    "express": "^4.16.4",
-    "jsonwebtoken": "^8.3.0",
-    "mongoose": "^5.3.8",
-    "mongoose-unique-validator": "^2.0.2",
-    "uuid": "^3.3.2"
-  },
-  "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/paulinemmt/orinoco.git"
+    "url": "git+https://github.com/jackwonka/Orinoco.git"
   },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "bugs": {
-    "url": "https://github.com/paulinemmt/orinoco/issues"
+    "url": "https://github.com/jackwonka/Orinoco/issues"
   },
-  "homepage": "https://github.com/paulinemmt/orinoco#readme"
+  "homepage": "https://github.com/jackwonka/Orinoco#readme"
 }
