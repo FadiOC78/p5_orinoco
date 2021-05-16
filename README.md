@@ -1,6 +1,5 @@
 Construisez un site e-commerce
 
-Auteur : Pauline Momot, pauline.momot@gmail.com
 
 Ce projet est mené dans le cadre d'une formation de développeur web au sein d'Openclassrooms.
 Le but est la création d'un site e-commerce. Le développement concerne la partie frontend. JavaScript est 
