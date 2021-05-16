@@ -1,0 +1,18 @@
+@import "variable_overrides"; /*A mettre en premier*/
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "./base/base";
+@import "./base/typography";
+@import "./layouts/footer";
+@import "./layouts/header";
+@import "./layouts/main";
+
+// Ordre :
+// 
+// Utils :
+// Variable, fonction, mixins, placeholder
+// Vendors
+// base
+// components
+// layouts
+// pages
+// thème

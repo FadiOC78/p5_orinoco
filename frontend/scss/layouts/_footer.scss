@@ -1,0 +1,9 @@
+// Comportement du survole des liens
+.footer a:hover{
+text-decoration: none;
+color:$warning;
+}
+
+.footer{
+    margin:auto;
+}

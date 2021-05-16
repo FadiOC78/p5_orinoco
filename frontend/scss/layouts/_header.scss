@@ -1,0 +1,25 @@
+// Image de fond header et footer
+.bg-img{
+background-image : url("../images/bg_camera.jpg");
+}
+
+// Padding du titre 
+.container-title{
+padding : 7rem 0rem;
+}
+
+// Taille des images de la barre de navigation
+.logo{
+    height:3.125rem;
+}
+
+.basket{
+    height:1.25rem;
+}
+
+// Comportement des liens de la barre de navigation au survol
+.nav-item:hover{
+     border:0.1rem solid $warning; 
+}
+
+
