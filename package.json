@@ -8,13 +8,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jackwonka/Orinoco.git"
+    "url": "git+https://github.com/FadiOC78/p5_orinoco.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jackwonka/Orinoco/issues"
+    "url": "https://github.com/FadiOC78/p5_orinoco/issues"
   },
-  "homepage": "https://github.com/jackwonka/Orinoco#readme"
+  "homepage": "https://github.com/FadiOC78/p5_orinoco#readme"
 }
