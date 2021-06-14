@@ -1,20 +1,23 @@
 /* Récupération de l'id du produit sélectionné dans la page précédente */
-const productId = window.location.search.substr(1); 
+
+const urlParams = new URLSearchParams(window.location.search);
+const productId = urlParams.get('id');
+
 
 
 /* Récupération du produit avec l'id associé depuis le serveur */ 
 
 fetch(`http://localhost:3000/api/teddies/${productId}`)
     .then((response) => response.json())
-    .then(response => {
+    .then(data => {
         
     let html="";
 
     // Affichage du produit / personalisation
-    html += `<h1 class="row">${response.name}</h1>
-        <p class="row"><img src="${response.imageUrl}" alt="image d'ours en détails" style="width:90%; border-radius:5px;"></p>
-        <p class="row">${response.description}</p>
-        <p class="row"><b>Prix: ${(response.price/100).toFixed(2).replace(".",",")}€</b></p>
+    html += `<h1 class="row">${data.name}</h1>
+        <p class="row"><img src="${data.imageUrl}" alt="image d'ours en détails" style="width:90%; border-radius:5px;"></p>
+        <p class="row">${data.description}</p>
+        <p class="row"><b>Prix: ${(data.price/100).toFixed(2).replace(".",",")}€</b></p>
         <!-- Personalisation de la couleur -->
         <label for="select__color">
             <h3>Personnaliser votre ours</h3>
@@ -28,7 +31,7 @@ fetch(`http://localhost:3000/api/teddies/${productId}`)
     //Création d'une function foreach pour afficher mes choix de couleurs
     let choice = document.querySelector(".section__choice");
     
-    response.colors.forEach (function (colors) {
+    data.colors.forEach (function (colors) {
         let option = document.createElement("option");
         option.value = colors;
         option.textContent = colors;
@@ -40,8 +43,8 @@ fetch(`http://localhost:3000/api/teddies/${productId}`)
 
     cartBtn.addEventListener('click', () => {
         let select = document.querySelector(".section__choice");
-        response.selectColors = select.options[select.selectedIndex].value;
-        addItemCart(response);
+        data.selectColors = select.options[select.selectedIndex].value;
+        addItemCart(data);
 
     })
 })
